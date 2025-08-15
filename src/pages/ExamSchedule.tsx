@@ -96,8 +96,7 @@ const ExamSchedule: React.FC = () => {
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      // In a real application, you would process the PDF/image here
-      // For demo purposes, we'll just show a success message
+      
       alert('Schedule uploaded successfully! (This is a demo - file processing would happen on the server)');
     }
   };
@@ -150,7 +149,7 @@ const ExamSchedule: React.FC = () => {
               </label>
             </div>
 
-            {/* Add Manually */}
+            {}
             <div className="text-center">
               <div className="bg-green-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Calendar className="h-8 w-8 text-green-600" />

@@ -110,7 +110,7 @@ const AIQuiz: React.FC = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // Calculate results
+      
       const correctAnswers = selectedAnswers.map((answer, index) => 
         answer === questions[index].correct
       );
