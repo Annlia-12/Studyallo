@@ -68,15 +68,14 @@ const AIQuiz: React.FC = () => {
     setIsGenerating(true);
     setCurrentStep('generating');
 
-    // Simulate API call to OpenAI
+    
     setTimeout(() => {
       setQuestions(sampleQuestions);
       setCurrentStep('quiz');
       setIsGenerating(false);
     }, 3000);
 
-    // In a real application, you would make an API call like this:
-    /*
+    
     try {
       const formData = new FormData();
       if (file) {
@@ -98,7 +97,7 @@ const AIQuiz: React.FC = () => {
     } finally {
       setIsGenerating(false);
     }
-    */
+    
   };
 
   const handleAnswerSelect = (answerIndex: number) => {
